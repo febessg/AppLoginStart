@@ -1,4 +1,4 @@
-var login = {
+var loginData = {
     emailAddress: "",
     password: ""
 }

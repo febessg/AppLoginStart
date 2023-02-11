@@ -13,7 +13,7 @@ header {
     margin-top: 25%;
 }
 
-#title1 {
+h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 10px;
@@ -40,6 +40,7 @@ input {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    padding: 5px;
 }
 
 ::placeholder {
