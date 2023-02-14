@@ -12,8 +12,8 @@
         <h1>Login</h1>
     </header>
     <main id="container">
-        <input type="email" name="emailAddress" id="emailAddress" placeholder="E-mail">
-        <input type="password" id="password" placeholder="Senha">
+        <input type="text" name="emailAddress" id="emailAddress" placeholder="E-mail" onchange="saveData()">
+        <input type="password" id="password" placeholder="Senha" onchange="saveData()">
         <button onclick="login()">Entrar</button>
     </main>
     <p id="message"></p>

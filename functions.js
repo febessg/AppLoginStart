@@ -1,25 +1,39 @@
-var loginData = {
+
+let loginData = {
     emailAddress: "",
     password: ""
 }
 
-var loginCorreto = {
+const loginCorreto = {
     emailAddress: 'fernanda-bess@hotmail.com',
     password: 'senha1234'
 }
 
- let emailAddress = document.getElementById('emailAddress')
- let password = document.getElementById('password')
- let message = document.getElementById('message')
+let emailAddress = document.getElementById('emailAddress');
+let password = document.getElementById('password');
+let message = document.getElementById("message")
+
+/*function saveData() { 
+    localStorage.setItem('emailAddress', emailAddress.value);
+    localStorage.setItem('password', password.value);  
+} 
+    document.onchange = saveData();*/
 
 function login() {
     let checkEmail = emailAddress.value == loginCorreto.emailAddress;
     let checkPassword = password.value == loginCorreto.password;
-  console.log(emailAddress.value) 
-  if (!checkEmail || !checkPassword) {
-        alert("Usuário ou senha incorretos!")
-    } else {
-        alert("Usuário correto. Logando...")
+
+    localStorage.setItem('emailAddress', emailAddress.value);
+    localStorage.setItem('password', password.value); 
+
+  if (checkEmail && checkPassword) {
+       alert("Usuário correto. Logando...")
         location.href="./main.html"
-    };
+    } else {
+        message.innerHTML = "Usuário ou senha incorretos. Tente novamente!"
+    }
 } 
+
+function logout() {
+    location.href="./index.html"
+}
