@@ -21,6 +21,13 @@ h1 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
 #container {
     background-color: #ffffff;
     width: 300px;
@@ -74,3 +81,14 @@ p {
     margin: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 } 
+
+#changeInfo {
+    border-style: solid;
+    border-color: #ffffff;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-width: 200px;
+    max-width: 500px;
+    padding: 10px;
+}
